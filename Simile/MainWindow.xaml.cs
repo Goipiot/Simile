@@ -23,6 +23,7 @@ namespace Simile
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
