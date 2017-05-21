@@ -5,10 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Simile"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="85,119,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="122,66,0,0" VerticalAlignment="Top"/>
+        Title="MainWindow" Height="372" Width="508.727">
+    <Grid Margin="0,0,3.333,-0.333">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto" MinWidth="249.667"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="Find a topic" HorizontalAlignment="Left" Margin="139.333,222,0,0" VerticalAlignment="Top" Width="101" Grid.Column="1" Height="20"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="323" Margin="10,10,0,0" VerticalAlignment="Top" Width="229"/>
+        <Label x:Name="label" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="10.333,222,0,0" VerticalAlignment="Top" Width="129" BorderBrush="#FF0C0202" Background="{x:Null}" Foreground="#FF0D0606" BorderThickness="1" Height="20"/>
+        <Button x:Name="Addbutton" Content="Add new topic" HorizontalAlignment="Left" Margin="10.333,256,0,0" VerticalAlignment="Top" Width="230" Height="20" Grid.Column="1"/>
+        <Button x:Name="Deletebutton" Content="Delete your topic" HorizontalAlignment="Left" Margin="10.333,289,0,0" VerticalAlignment="Top" Width="230" Height="20" Click="Deletebutton_Click" Grid.Column="1"/>
+        <Label x:Name="label1" Content="Info" Grid.Column="1" HorizontalAlignment="Left" Margin="108.333,10,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBox1" Grid.Column="1" HorizontalAlignment="Left" Height="166" Margin="10.333,36,0,0" VerticalAlignment="Top" Width="230"/>
 
     </Grid>
 </Window>
