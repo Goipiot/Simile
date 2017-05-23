@@ -36,16 +36,16 @@ namespace Simile
         }
 
 
-        public Lecturer(string name, int rating)
-        {
-            _name = name;
-            _rating = rating;
-        }
+    //    public Lecturer(string name, int rating)
+    //    {
+    //        _name = name;
+    //        _rating = rating;
+    //    }
 
-        public Lecturer(string name) 
-            : this(name, DefaultRating) {
-        }
-    }
+    //    public Lecturer(string name) 
+    //        : this(name, DefaultRating) {
+    //    }
+    //}
 
-}
+
 }
