@@ -36,5 +36,15 @@ namespace Simile
             var Form = new DocViewer();
             Form.ShowDialog();
         }
+
+        private void Deletebutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

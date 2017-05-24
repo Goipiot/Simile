@@ -8,8 +8,6 @@ namespace Simile
 {
     class User
     {
-        public const int DefaultRating = 5;
-
         private string _name;
 
         public string Name
@@ -17,35 +15,30 @@ namespace Simile
             get { return _name; }
             set { _name = value; }
         }
+        private string _password;
 
-        // 0 - 10
-        private int _rating;
-
-        public int Rating
+        public string Password
         {
-            get { return _rating; }
-            set { _rating = value; }
+            get { return _password; }
+            set { _password = value; }
         }
 
         public string Info
         {
             get
             {
-                return $"{_name} - {_rating}";
+                return $"{_name} - {_password}";
             }
         }
+        public User(string name, string password)
+        {
+            _name = name;
+            _password = password;
+        }
 
-
-    //    public Lecturer(string name, int rating)
-    //    {
-    //        _name = name;
-    //        _rating = rating;
-    //    }
-
-    //    public Lecturer(string name) 
-    //        : this(name, DefaultRating) {
-    //    }
-    //}
-
-
+    }
 }
+ 
+
+
+

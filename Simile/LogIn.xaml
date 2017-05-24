@@ -1,0 +1,21 @@
+﻿<Window x:Class="Simile.LogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Simile"
+        mc:Ignorable="d"
+        Title="LogIn" Height="108.459" Width="291.814">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="nameBox" HorizontalAlignment="Left" Height="25" Margin="74,14,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="92" Grid.ColumnSpan="2" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="passBox" HorizontalAlignment="Left" Height="25" Margin="74,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="92" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Content="имя" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="31"/>
+        <Label x:Name="label_Copy" Content="пароль" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="26" Width="49"/>
+        <Button x:Name="button" Content="Вход" HorizontalAlignment="Left" Margin="22.333,30,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="20" Click="button_Click"/>
+
+    </Grid>
+</Window>

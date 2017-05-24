@@ -12,7 +12,7 @@
             <ColumnDefinition Width="Auto" MinWidth="249.667"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="button" Content="Find a topic" HorizontalAlignment="Left" Margin="139.333,207,0,0" VerticalAlignment="Top" Width="101" Grid.Column="1" Height="20" BorderBrush="#FF060101"/>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="292" Margin="10,10,0,0" VerticalAlignment="Top" Width="229"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="292" Margin="10,10,0,0" VerticalAlignment="Top" Width="229" SelectionChanged="listBox_SelectionChanged"/>
         <Label x:Name="label" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="10.333,207,0,0" VerticalAlignment="Top" Width="129" BorderBrush="#FF0C0202" Background="#FFFEFEFE" Foreground="#FF0D0606" BorderThickness="1" Height="20"/>
         <Button x:Name="Addbutton" Content="Add new topic" HorizontalAlignment="Left" Margin="10.333,232,0,0" VerticalAlignment="Top" Width="230" Height="20" Grid.Column="1" BorderBrush="#FF0C0404"/>
         <Button x:Name="Deletebutton" Content="Add your var" HorizontalAlignment="Left" Margin="139.333,257,0,0" VerticalAlignment="Top" Width="101" Height="20" Click="Deletebutton_Click" Grid.Column="1" BorderBrush="#FF1E0E0E"/>
