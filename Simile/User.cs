@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Simile
 {
-    class User
+    public class User
     {
         private string _name;
-
+        private List<Topic> _topics;
         public string Name
         {
             get { return _name; }
@@ -35,7 +35,11 @@ namespace Simile
             _name = name;
             _password = password;
         }
-
+        public List<Topic> GetTopic
+        {
+            get { return _topics; }
+            set { _topics = value; }
+        }
     }
 }
  

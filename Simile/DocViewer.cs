@@ -12,18 +12,15 @@ namespace Simile
 {
     public partial class DocViewer : Form
     {
+        public static Topic _nowtopic;
         public DocViewer()
         {
             InitializeComponent();
+            axAcroPDF1.src =_nowtopic.Filename;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFile1 = new OpenFileDialog();
-            if (openFile1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                axAcroPDF1.src = openFile1.FileName;
-            }
         }
     }
 }

@@ -33,13 +33,34 @@ namespace Simile
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            User newUser = new User(nameBox.ToString(),passBox.ToString());
-            UserList.Add(newUser);
-            
+            User newUser = new User(nameBox.ToString(), passBox.ToString());
+            foreach (User user in UserList)
+            {
+                if (newUser == user)
+                {
+                    MainWindow._usernow = newUser;
+                    break;
+                }                    
+            }
+            MainWindow._usernow = newUser;
+            NewTopic._usernow = newUser;
+            UserList.Add(newUser);            
             var mWindow = new MainWindow();
+            Hide();
             Close();
             mWindow.ShowDialog();
-           
+            
+            //if (mWindow.Backbutton.IsEnabled == true || mWindow.IsEnabled == true)
+            //{
+            //    Show();
+            //    nameBox.Text = null;
+            //    passBox.Text = null;
+            //}
+            //else if (mWindow.IsEnabled == false || mWindow.Backbutton.IsEnabled == false)
+            //{
+            //    Close();
+            //}
+
         }
     }
 }
