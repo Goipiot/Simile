@@ -12,15 +12,16 @@ namespace Simile
 {
     public partial class DocViewer : Form
     {
-        public static Topic _nowtopic;
+        
         public DocViewer()
         {
+
             InitializeComponent();
-            axAcroPDF1.src =_nowtopic.Filename;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void DocViewer_Load(object sender, EventArgs e)
         {
+
         }
     }
 }

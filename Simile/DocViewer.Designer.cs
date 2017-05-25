@@ -29,52 +29,56 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DocViewer));
-            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
+            this.DocWindow = new AxAcroPDFLib.AxAcroPDF();
+            this.nameLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.DocWindow)).BeginInit();
             this.SuspendLayout();
             // 
-            // axAcroPDF1
+            // DocWindow
             // 
-            this.axAcroPDF1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.DocWindow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.axAcroPDF1.Enabled = true;
-            this.axAcroPDF1.Location = new System.Drawing.Point(12, 50);
-            this.axAcroPDF1.Name = "axAcroPDF1";
-            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
-            this.axAcroPDF1.Size = new System.Drawing.Size(434, 296);
-            this.axAcroPDF1.TabIndex = 0;
+            this.DocWindow.Enabled = true;
+            this.DocWindow.Location = new System.Drawing.Point(12, 105);
+            this.DocWindow.Name = "DocWindow";
+            this.DocWindow.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("DocWindow.OcxState")));
+            this.DocWindow.Size = new System.Drawing.Size(376, 247);
+            this.DocWindow.TabIndex = 0;
             // 
-            // button1
+            // nameLabel
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(191, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.nameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameLabel.Location = new System.Drawing.Point(149, 9);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(85, 29);
+            this.nameLabel.TabIndex = 1;
+            this.nameLabel.Text = "label1";
             // 
             // DocViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(458, 357);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.axAcroPDF1);
+            this.ClientSize = new System.Drawing.Size(400, 364);
+            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.DocWindow);
             this.Name = "DocViewer";
-            this.Text = "DocViewer";
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).EndInit();
+            this.Text = "Просмотр";
+            this.Load += new System.EventHandler(this.DocViewer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DocWindow)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private AxAcroPDFLib.AxAcroPDF axAcroPDF1;
-        private System.Windows.Forms.Button button1;
+        public AxAcroPDFLib.AxAcroPDF DocWindow;
+        public System.Windows.Forms.Label nameLabel;
     }
 }

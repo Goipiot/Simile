@@ -78,9 +78,6 @@
     <Compile Include="DocViewer.Designer.cs">
       <DependentUpon>DocViewer.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogIn.xaml.cs">
-      <DependentUpon>LogIn.xaml</DependentUpon>
-    </Compile>
     <Compile Include="NewTopic.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +85,6 @@
       <DependentUpon>NewTopic.cs</DependentUpon>
     </Compile>
     <Compile Include="Topic.cs" />
-    <Compile Include="User.cs" />
-    <Page Include="LogIn.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

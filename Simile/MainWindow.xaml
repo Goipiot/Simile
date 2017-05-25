@@ -5,21 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Simile"
         mc:Ignorable="d"
-        Title="MainWindow" Height="215.333" Width="442.061">
+        Title="Основное меню" Height="215.333" Width="442.061">
     <Grid Margin="0,0,3.333,-0.333" Background="#FF4B8E5B">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="Auto" MinWidth="222"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Deletebutton_Copy" Content="Delete your topic" HorizontalAlignment="Left" Margin="10.333,282,0,0" VerticalAlignment="Top" Width="230" Height="20" Click="Deletebutton_Click" Grid.Column="1" BorderBrush="#FF160606"/>
-        <Button x:Name="Findbutton" Content="Find a topic" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="101" Grid.Column="1" Height="20" BorderBrush="#FF060101"/>
+        <Button x:Name="Findbutton" Content="Find a topic" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="101" Grid.Column="1" Height="20" BorderBrush="#FF060101" Click="Findbutton_Click"/>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="130" Margin="10,10,0,0" VerticalAlignment="Top" Width="196" SelectionChanged="listBox_SelectionChanged"/>
-        <Label x:Name="findTopicbox" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="111,10,0,0" VerticalAlignment="Top" Width="102" BorderBrush="#FF0C0202" Background="#FFFEFEFE" Foreground="#FF0D0606" BorderThickness="1" Height="20"/>
         <Button x:Name="Addbutton" Content="Add new topic" HorizontalAlignment="Left" Margin="11,95,0,0" VerticalAlignment="Top" Width="202" Height="20" Grid.Column="1" BorderBrush="#FF0C0404" Click="Addbutton_Click"/>
-        <Button x:Name="addButton" Content="Add your var" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="101" Height="20" Click="Deletebutton_Click" Grid.Column="1" BorderBrush="#FF1E0E0E"/>
         <Button x:Name="Deletebutton" Content="Delete your topic" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="203" Height="20" Click="Deletebutton_Click" Grid.Column="1" BorderBrush="#FF160606"/>
-        <Label x:Name="addVarbox" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="111,35,0,0" VerticalAlignment="Top" Width="102" BorderBrush="#FF0C0202" Background="White" Foreground="#FF0D0606" BorderThickness="1" Height="20"/>
         <Button x:Name="InfoButton" Content="INFO" HorizontalAlignment="Left" Margin="71,152,0,0" VerticalAlignment="Top" Width="75" Click="InfoButton_Click" Height="24"/>
+        <TextBox x:Name="findBox" Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="111,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" TextChanged="findBox_TextChanged"/>
 
     </Grid>
 </Window>
